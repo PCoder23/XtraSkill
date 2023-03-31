@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imgContent"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/polygon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="102sp"
+            android:background="@drawable/polygon_1" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/polygon_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2sp"
+            android:background="@drawable/polygon_2" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/image_1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/already_hav"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="335sp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:lineHeight="30sp"
+            android:text="Already have an Account ?"
+            android:textColor="#000000"
+            android:textFontWeight="900"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="280sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgContent"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Username or Email :"
+            android:textColor="@color/black"
+            app:fontFamily="@font/anonymous_pro_bold"
+            android:textSize="16sp"
+            android:layout_margin="2sp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userIdInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:layout_margin="2sp"
+            android:backgroundTint="#901593"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:textColor="@color/black"
+            app:fontFamily="@font/anonymous_pro_bold"
+            android:textSize="16sp"
+            android:layout_margin="2sp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:layout_margin="2sp"
+            android:backgroundTint="#901593"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/login_button_background"
+            android:layout_width="220sp"
+            android:layout_height="32sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6sp"
+            android:text="login"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/signupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            >
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User ?"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="#AF3EB2"
+                android:layout_margin="3sp"
+
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:text="Register Now"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="#AF3EB2"
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_3"
+                android:layout_marginEnd="10sp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:fontFamily="@font/anonymous_pro_bold"
+                android:text="Use Other Methods"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_3"
+                android:layout_marginStart="10sp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gle"
+            android:layout_margin="8sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView
+        android:id="@+id/ellipse_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ellipse_1" />
+
+
+</RelativeLayout>
