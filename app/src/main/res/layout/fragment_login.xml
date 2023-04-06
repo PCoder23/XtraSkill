@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +66,6 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="text"
             android:text="Username or Email :"
             android:textColor="@color/black"
             app:fontFamily="@font/anonymous_pro_bold"
@@ -78,6 +78,7 @@
             android:ems="13"
             android:layout_margin="2sp"
             android:backgroundTint="#901593"
+            android:inputType="text"
             />
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
@@ -94,8 +95,8 @@
             android:layout_height="wrap_content"
             android:ems="13"
             android:layout_margin="2sp"
-            android:backgroundTint="#901593"
-            />
+            android:inputType="textPassword"
+            android:backgroundTint="#901593"/>
         <androidx.appcompat.widget.AppCompatButton
             android:background="@drawable/login_button_background"
             android:layout_width="220sp"
