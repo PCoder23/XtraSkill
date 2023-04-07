@@ -105,6 +105,7 @@
             android:layout_margin="6sp"
             android:text="login"
             android:textColor="@color/white"
+            android:id="@+id/lgn_btn"
             android:textSize="16sp"
             />
         <androidx.appcompat.widget.LinearLayoutCompat

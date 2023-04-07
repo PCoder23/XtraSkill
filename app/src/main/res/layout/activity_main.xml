@@ -7,17 +7,22 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     >
+
     <FrameLayout
         android:id="@+id/mainFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/btmNvgtn"
-        />
-   <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_above="@id/btmNvgtn"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
        android:id="@+id/btmNvgtn"
        android:layout_width="match_parent"
        android:layout_height="?attr/actionBarSize"
        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        app:itemIconSize="85px"
+       app:labelVisibilityMode="labeled"
+        android:background="#AF3EB2"
        />
 
 

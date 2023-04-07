@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="top"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="0sp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/image_background"
+            android:layout_alignParentLeft="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/noti_btn"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:src="@drawable/baseline_notifications_24"
+            android:padding="3sp"
+            android:backgroundTint="#E258E6"
+            android:background="@drawable/image_background" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/noti_btn"
+            android:layout_marginEnd="-10dp"
+            android:hint="Search Here"
+            android:paddingLeft="15sp"
+            android:background="@drawable/image_background"
+            android:ems="10" />
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8256CA"
+            android:text="Hey!"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="28sp"
+            android:layout_margin="15sp"
+            android:fontFamily="@font/itim"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:text="Pranav "
+            android:textColor="#8256CA"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/hey"
+            app:layout_constraintTop_toBottomOf="@id/hey" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:lottie_rawRes="@raw/home_hello"
+            app:lottie_autoPlay="true"
+            android:layout_marginRight="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_loop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15sp"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Ongoing Courses"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120sp"
+            android:layout_height="40sp"
+            android:layout_gravity="end"
+            android:background="@drawable/see_more_background"
+            android:hint="See More"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginRight="3sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem="@layout/ongoing_courses_cardview"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
